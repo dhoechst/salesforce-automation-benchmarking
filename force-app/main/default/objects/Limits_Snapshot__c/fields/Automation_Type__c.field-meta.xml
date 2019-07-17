@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Automation_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Automation Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Baseline</fullName>
+                <default>false</default>
+                <label>Baseline</label>
+            </value>
+            <value>
+                <fullName>WF Rule Re-Eval</fullName>
+                <default>false</default>
+                <label>WF Rule Re-Eval</label>
+            </value>
+            <value>
+                <fullName>WF Rule No Re-Eval</fullName>
+                <default>false</default>
+                <label>WF Rule No Re-Eval</label>
+            </value>
+            <value>
+                <fullName>One PB</fullName>
+                <default>false</default>
+                <label>One PB</label>
+            </value>
+            <value>
+                <fullName>Three PB</fullName>
+                <default>false</default>
+                <label>Three PB</label>
+            </value>
+            <value>
+                <fullName>Apex</fullName>
+                <default>false</default>
+                <label>Apex</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
