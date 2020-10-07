@@ -26,39 +26,14 @@
                 <label>Before Save Flow</label>
             </value>
             <value>
-                <fullName>PB_v1</fullName>
+                <fullName>Process Builder</fullName>
                 <default>false</default>
-                <label>PB v1</label>
+                <label>Process Builder</label>
             </value>
             <value>
-                <fullName>PB_v2</fullName>
+                <fullName>WF Rule</fullName>
                 <default>false</default>
-                <label>PB v2</label>
-            </value>
-            <value>
-                <fullName>PB_v3</fullName>
-                <default>false</default>
-                <label>PB v3</label>
-            </value>
-            <value>
-                <fullName>PB_v4</fullName>
-                <default>false</default>
-                <label>PB v4</label>
-            </value>
-            <value>
-                <fullName>PB_v5</fullName>
-                <default>false</default>
-                <label>PB v5</label>
-            </value>
-            <value>
-                <fullName>WF Rule No Re-Eval</fullName>
-                <default>false</default>
-                <label>WF Rule No Re-Eval</label>
-            </value>
-            <value>
-                <fullName>WF Rule Re-Eval</fullName>
-                <default>false</default>
-                <label>WF Rule Re-Eval</label>
+                <label>WF Rule</label>
             </value>
         </valueSetDefinition>
     </valueSet>

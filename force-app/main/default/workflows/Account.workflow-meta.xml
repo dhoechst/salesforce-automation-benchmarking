@@ -36,7 +36,7 @@
             <name>Employee_300</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Account.Rating</field>
             <operation>equals</operation>
@@ -50,7 +50,7 @@
             <name>Employee_Count_100</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Account.Rating</field>
             <operation>equals</operation>
@@ -64,7 +64,7 @@
             <name>Employee_200</name>
             <type>FieldUpdate</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Account.Rating</field>
             <operation>equals</operation>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <assignments>
-        <name>X100_employees</name>
-        <label>100 employees</label>
-        <locationX>884</locationX>
-        <locationY>22</locationY>
+        <name>Employees_100</name>
+        <label>Employees 100</label>
+        <locationX>590</locationX>
+        <locationY>243</locationY>
         <assignmentItems>
             <assignToReference>$Record.NumberOfEmployees</assignToReference>
             <operator>Assign</operator>
@@ -14,10 +14,10 @@
         </assignmentItems>
     </assignments>
     <assignments>
-        <name>X200_Employees</name>
-        <label>200 Employees</label>
-        <locationX>898</locationX>
-        <locationY>194</locationY>
+        <name>Employees_200</name>
+        <label>Employees 200</label>
+        <locationX>590</locationX>
+        <locationY>378</locationY>
         <assignmentItems>
             <assignToReference>$Record.NumberOfEmployees</assignToReference>
             <operator>Assign</operator>
@@ -27,10 +27,10 @@
         </assignmentItems>
     </assignments>
     <assignments>
-        <name>X300_Employees</name>
-        <label>300 Employees</label>
-        <locationX>909</locationX>
-        <locationY>346</locationY>
+        <name>Employees_300</name>
+        <label>Employees 300</label>
+        <locationX>469</locationX>
+        <locationY>433</locationY>
         <assignmentItems>
             <assignToReference>$Record.NumberOfEmployees</assignToReference>
             <operator>Assign</operator>
@@ -42,8 +42,8 @@
     <decisions>
         <name>Account_Rating</name>
         <label>Account Rating</label>
-        <locationX>408</locationX>
-        <locationY>54</locationY>
+        <locationX>168</locationX>
+        <locationY>309</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Hot</name>
@@ -56,7 +56,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>X100_employees</targetReference>
+                <targetReference>Employees_100</targetReference>
             </connector>
             <label>Hot</label>
         </rules>
@@ -71,7 +71,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>X200_Employees</targetReference>
+                <targetReference>Employees_200</targetReference>
             </connector>
             <label>Warm</label>
         </rules>
@@ -86,13 +86,13 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>X300_Employees</targetReference>
+                <targetReference>Employees_300</targetReference>
             </connector>
             <label>Cold</label>
         </rules>
     </decisions>
-    <interviewLabel>Before Save - Account Update Based on Rating {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Before Save - Account Update Based on Rating</label>
+    <interviewLabel>Account: Set Employees {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account: Set Employees</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -108,35 +108,4 @@
     <processType>AutoLaunchedFlow</processType>
     <startElementReference>Account_Rating</startElementReference>
     <status>Obsolete</status>
-    <variables>
-        <name>AccountList</name>
-        <dataType>SObject</dataType>
-        <isCollection>true</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>Account</objectType>
-    </variables>
-    <variables>
-        <name>AccountsToUpdateList</name>
-        <dataType>SObject</dataType>
-        <isCollection>true</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <objectType>Account</objectType>
-    </variables>
-    <variables>
-        <name>Acct</name>
-        <dataType>SObject</dataType>
-        <isCollection>false</isCollection>
-        <isInput>true</isInput>
-        <isOutput>false</isOutput>
-        <objectType>Account</objectType>
-    </variables>
-    <variables>
-        <name>AcctId</name>
-        <dataType>String</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-    </variables>
 </Flow>
